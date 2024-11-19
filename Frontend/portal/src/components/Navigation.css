@@ -1,0 +1,58 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space out logo and links */
+    align-items: center; /* Center items vertically */
+    padding: 10px 30px; /* Add space inside the navbar */
+    position: fixed; /* Keep the navbar at the top of the page */
+    top: 0;
+    width: 100%; 
+    background-color: rgba(255,255,255,0.3); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 100;
+    margin: 0px; 
+  }
+  
+  .navbar .logo {
+    max-height: 50px; 
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    color: #007bff; 
+  }
+  
+  .navbar .login {
+    background-color: #007bff; 
+    color: white ;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-right: 25px;
+    
+  }
+  
+  .navbar .login:hover {
+    background-color: #0056b3; 
+  }
+  
