@@ -4,7 +4,7 @@ const Navigation = () => {
 
    return (
     <div class="navbar">
-  <img src="logo.png" alt="logo" class="logo" />
+  <img src="./images/logo.png" alt="logo" class="logo" />
   <ul>
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>

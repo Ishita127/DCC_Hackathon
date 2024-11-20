@@ -1,9 +1,11 @@
 import './App.css';
-import Home from './components/Home';
-import LoginBox from './components/LoginBox';
-import Login from './components/Login';
-import Forgotpassword from './components/Forgotpassword';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
+import Home from './pages/Home';
+import LoginBox from './pages/LoginBox';
+import Login from './pages/Login';
+import Forgotpassword from './pages/Forgotpassword';
+import Student from './pages/Student';
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
           <Route path="/LoginBox" element={<LoginBox />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Forgotpassword" element={<Forgotpassword />} />
+          <Route path="/Student" element={<Student />} />
         </Routes>
       </div>
     </Router>

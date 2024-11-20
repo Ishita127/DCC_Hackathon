@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import React from "react";
 import "./LoginBox.css";
 import "./Forgotpassword";
-
+import Student from "./Student";
 
 const Login = () => {
   return (
@@ -19,7 +19,9 @@ const Login = () => {
               Forgot password?
           </Link>
           <br />
-        <button type="submit" className="submit-button">Continue</button>
+          <Link to="/Student">
+          <button type="submit" className="submit-button">Continue</button>
+          </Link>
         </form>
       </div>
       <div className="img"></div>

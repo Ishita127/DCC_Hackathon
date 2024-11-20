@@ -1,0 +1,31 @@
+
+.greeting-card {
+    background: #908afd;
+    color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 60px; 
+    margin-left: 30px;
+    width: 1090px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .myScore {
+    background: linear-gradient(130deg, skyblue, #172b4d) ;
+    color: white;
+    border-radius: 10%;
+    padding: 30px;
+    margin-top: 60px; 
+    margin-left: 30px;
+    width: 1090px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+   
+
+  
