@@ -24,7 +24,6 @@ public class Login extends HttpServlet {
             
             if(rs.next())
                 out.println("<h3>Login Successful!</h3>");
-            //response.sendRedirect("Home.jsp");
             else 
                 out.println("User not found");
             con.close();
