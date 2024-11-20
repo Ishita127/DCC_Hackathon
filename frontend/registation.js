@@ -35,8 +35,5 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
       errors.confirmPassword || "";
     document.getElementById("error-userRole").textContent = errors.userRole || "";
   
-    if (Object.keys(errors).length === 0) {
-      alert("Form submitted successfully!");
-    }
   });
   
