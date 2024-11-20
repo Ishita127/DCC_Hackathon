@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="student.css">
+  <link rel="stylesheet" href="todo.css">
+  <link rel="stylesheet" href="leaderboard.css">
+</head>
+<body>
+  <div class="student">
+    <div class="main-sect">
+      <header>
+        <svg id="hamburger-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 80" width="40" height="40" fill="white">
+          <rect width="100" height="20"></rect>
+          <rect y="30" width="100" height="20"></rect>
+          <rect y="60" width="100" height="20"></rect>
+        </svg>
+        <img src="./images/logo.png" alt="Logo" class="logo">
+      </header>
+      <div id="backdrop" class="backdrop hidden"></div>
+      <div id="navbar" class="sidenav">
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="/">Performance Matrix</a></li>
+          <li><a href="/">Dashboard</a></li>
+          <li><a href="student.html">Leaderboard</a></li>
+          <li><a href="student.html">To-Do List</a></li>
+        </ul>
+      </div>
+    </div>
+    <section class="greeting-card">
+      <h2>Good Morning!</h2>
+      <p>You've learned 75% of your goal this week! Keep it up and improve your results.</p>
+    </section>
+    <section class="todo">
+      <h1>Sticky TO-DO Wall</h1>
+      <div id="task-container" class="task-container">
+        <!-- Tasks will be dynamically added here -->
+      </div>
+    </section>
+    <section class="myScore">
+      <h2>YOUR SCORE</h2>
+      <h3>830 points</h3>
+    </section>
+    <section class="leaderBoard">
+        <div class="leaderboard-container">
+            <h1>TEAM LEADERBOARD</h1>
+            <div class="top-cards">
+              <div class="top-card" id="user1">
+                <div class="user-image"></div>
+                <h1>Rank 1</h1>
+                <h2 id="name1">mani</h2>
+                <p id="designation1">Position</p>
+                <p id="score1">$1,000</p>
+              </div>
+              <div class="top-card" id="user2">
+                <div class="user-image"></div>
+                <h1>Rank 2</h1>
+                <h2 id="name2">Lavish</h2>
+                <p id="designation2">Position</p>
+                <p id="score2">$1,200</p>
+              </div>
+              <div class="top-card" id="user3">
+                <div class="user-image"></div>
+                <h1>Rank 3</h1>
+                <h2 id="name3">Hari</h2>
+                <p id="designation3">Position</p>
+                <p id="score3">$900</p>
+              </div>
+            </div>
+            <div class="table">
+              <div class="table-header">
+                <span>Userid</span>
+                <span>Name</span>
+                <span>Score</span>
+                <span>Project Count</span>
+              </div>
+              <div class="table-row" id="userRow1">
+                <span id="rowid1">123</span>
+                <span id="rowName1">User 1</span>
+                <span id="rowScore1">1,000</span>
+                <span id="rowProjectCount1">3</span>
+              </div>
+              <div class="table-row" id="userRow2">
+                <span id="rowid2">123@1</span>
+                <span id="rowName2">User 2</span>
+                <span id="rowScore2">1,200</span>
+                <span id="rowProjectCount2">5</span>
+              </div>
+              <div class="table-row" id="userRow3">
+                <span id="rowid3">123@1</span>
+                <span id="rowName3">User 3</span>
+                <span id="rowScore3">900</span>
+                <span id="rowProjectCount3">2</span>
+              </div>
+              <div class="table-row" id="userRow3">
+                <span id="rowid4">123@1</span>
+                <span id="rowName4">User 4</span>
+                <span id="rowScore4">90</span>
+                <span id="rowProjectCount3">2</span>
+              </div>
+              <div class="table-row" id="userRow3">
+                <span id="rowid2">123@1</span>
+                <span id="rowName3">User 5</span>
+                <span id="rowScore3">80</span>
+                <span id="rowProjectCount3">2</span>
+              </div>
+              <div class="table-row" id="userRow3">
+                <span id="rowid2">123@1</span>
+                <span id="rowName3">User 6</span>
+                <span id="rowScore3">60</span>
+                <span id="rowProjectCount3">2</span>
+              </div>
+              <div class="table-row" id="userRow3">
+                <span id="rowid2">123@1</span>
+                <span id="rowName3">User 7</span>
+                <span id="rowScore3">50</span>
+                <span id="rowProjectCount3">2</span>
+              </div>
+              <div class="table-row" id="userRow3">
+                <span id="rowid2">123@1</span>
+                <span id="rowName3">User 8</span>
+                <span id="rowScore3">30</span>
+                <span id="rowProjectCount3">2</span>
+              </div>
+            </div>
+          </div>
+    </section>
+  </div>
+  <script src="student.js"></script>
+  <script src="todo.js"></script>
+  <script src="leaderboard.js"></script>
+</body>
+</html>
