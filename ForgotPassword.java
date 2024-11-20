@@ -76,18 +76,18 @@ public class ForgotPassword extends HttpServlet {
     }
 
     private void sendEmail(String to, String otp) {
-        String from = "your-email@example.com"; // Your email
-        String host = "smtp.example.com"; // Your SMTP server
+        String from = "your-email@example.com";
+        String host = "smtp.example.com"; 
 
         Properties properties = System.getProperties();
         properties.setProperty("mail.smtp.host", host);
-        properties.setProperty("mail.smtp.port", "587"); // or your SMTP port
+        properties.setProperty("mail.smtp.port", "587"); 
         properties.setProperty("mail.smtp.auth", "true");
         properties.setProperty("mail.smtp.starttls.enable", "true");
 
         Session session = Session.getInstance(properties, new Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("your-email@example.com", "your-email-password"); // Your email and password
+                return new PasswordAuthentication("your-email@example.com", "your-email-password"); 
             }
         });
 
@@ -105,13 +105,13 @@ public class ForgotPassword extends HttpServlet {
 
     private String generateOtp() {
         Random random = new Random();
-        return String.format("%06d", random.nextInt(999999)); // Generates a 6-digit OTP
+        return String.format("%06d", random.nextInt(999999));
     }
 
     private Connection getConnection () throws SQLException {
-        String url = "jdbc:mysql://localhost:3306/your_database"; // Your database URL
-        String user = "your_db_user"; // Your database username
-        String password = "your_db_password"; // Your database password
+        String url = "jdbc:mysql://localhost:3306/DCCHackathon"; 
+        String user = "root"; 
+        String password = "Root"; 
         return DriverManager.getConnection(url, user, password);
     }
 
