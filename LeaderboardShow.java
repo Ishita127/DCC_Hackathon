@@ -8,8 +8,8 @@ import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
-@WebServlet("/Leaderboard")
-public class Leaderboard extends HttpServlet {
+@WebServlet("/LeaderboardShow")
+public class LeaderboardShow extends HttpServlet {
     Connection con = null;
     Statement stmt = null;
     ResultSet rs = null;
