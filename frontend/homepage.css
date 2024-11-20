@@ -1,0 +1,146 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: black;
+    overflow-x: hidden; 
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+  }
+  
+  .navbar .logo {
+    max-height: 50px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    color: #007bff;
+  }
+  
+  .navbar .login {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar .login:hover {
+    background-color: #0056b3;
+  }
+  
+  .whole {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/LandingPage.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+  }
+  
+  .Home {
+    text-align: center;
+    background: rgba(252, 251, 251, 0.7); 
+    padding: 30px;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    max-width: 600px;
+    width: 90%; 
+  }
+  
+  .Home h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .Home p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  .btn1 {
+    background-color: #4d8dfb;
+    color: whitesmoke;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .btn1:hover {
+    background-color: #56CCF2;
+    color: white;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .navbar ul li {
+      margin: 0 10px;
+    }
+  
+    .navbar ul li a {
+      font-size: 14px;
+    }
+  
+    .btn1 {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  
+    .Home {
+      padding: 20px;
+    }
+  
+    .Home h1 {
+      font-size: 2rem;
+    }
+  
+    .Home p {
+      font-size: 1rem;
+    }
+  }
+  

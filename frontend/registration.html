@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Box</title>
+  <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+  <div class="container">
+    <div class="LoginBox">
+      <div class="divider">
+        <h1 class="LoginFont">Register</h1>
+      </div>
+      <form id="loginForm">
+        <div class="input-row">
+          <div>
+            <input type="text" name="firstName" placeholder="First name" class="input-field" required/>
+          </div>
+          <div>
+            <input type="text" name="lastName" placeholder="Last name" class="input-field" required/>
+          </div>
+        </div>
+        <input type="email" name="email" placeholder="Email address" class="input-field boxwidth" required/>
+        
+        <span id="error-email" class="error"></span>
+
+        <select id="userRole" class="input-field boxwidth dropdown-field">
+          <option name="RegisterAs" value="" disabled selected>Register as:</option>
+          <option value="admin">Admin</option>
+          <option value="Student">Student</option>
+          <option value="alumni">Alumni</option> 
+        </select>
+        <span id="error-userRole" class="error"></span>
+
+        <input type="password" name="password" placeholder="password" class="input-field boxwidth"  required/>
+
+        <span id="error-password" class="error"></span>
+
+        <input type="password" type="password" placeholder="Confirm Password" class="input-field boxwidth" required/>
+        <span id="error-confirmPassword" class="error"></span>
+
+        <button type="submit" class="submit-button">Continue</button>
+        <p>
+          Already have an account? <a href="/Login" style="color: #6c63ff;">login</a>
+        </p>
+      </form>
+    </div>
+    <div class="img"></div>
+  </div>
+  <script src="registation.js"></script>
+</body>
+</html>
