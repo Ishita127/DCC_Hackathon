@@ -3,8 +3,8 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.sql.*;
 import javax.servlet.annotation.WebServlet;
+
 @WebServlet("/Registration")
-//@WebServlet("/Registration")
 public class Registration extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         
@@ -28,7 +28,7 @@ public class Registration extends HttpServlet {
             Connection con = DriverManager.getConnection("jdbc:mysql:///DCCHackathon?useSSL=false","root","Root");
             Statement st = con.createStatement();
             String query = "INSERT INTO registration (firstName, lastName, email, registeras, password, confirmPassword) "   + "VALUES ('" + firstName + "', '" + lastName + "', '" + email + "', '" + userRole + "', '" + password + "', '" + confirmPassword + "')";
-            st.executeUpdate(query);// Response on successful registration
+            st.executeUpdate(query);
             //out.println("<h3>Registration Successful!</h3>");
             
             response.sendRedirect("login.html");
