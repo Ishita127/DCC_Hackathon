@@ -1,3 +1,3 @@
-function navigateToLogin() {
-    window.location.href = "login.html";
-  }
+function navigateToRegistration() {
+  window.location.href = "registration.html";
+}

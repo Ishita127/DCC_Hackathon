@@ -1,6 +1,6 @@
 document.getElementById("loginForm").addEventListener("submit", function (event) {
   event.preventDefault();
-  window.location.href = './Student.html';
+  window.location.href = 'student.html';
 });
 
   

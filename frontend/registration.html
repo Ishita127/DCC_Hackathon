@@ -25,8 +25,8 @@
         
         <span id="error-email" class="error"></span>
 
-        <select id="userRole" class="input-field boxwidth dropdown-field">
-          <option name="RegisterAs" value="" disabled selected>Register as:</option>
+        <select id="userRole" name="RegisterAs" class="input-field boxwidth dropdown-field">
+          <option value="" disabled selected>Register as:</option>
           <option value="admin">Admin</option>
           <option value="Student">Student</option>
           <option value="alumni">Alumni</option> 
@@ -40,14 +40,14 @@
         <input type="password" type="password" placeholder="Confirm Password" class="input-field boxwidth" required/>
         <span id="error-confirmPassword" class="error"></span>
 
-        <button type="submit" class="submit-button">Continue</button>
+        <button type="button" onclick="navigateToStudent()" class="submit-button">Continue</button>
         <p>
-          Already have an account? <a href="/Login" style="color: #6c63ff;">login</a>
+          Already have an account? <a href="login.html" style="color: #6c63ff;">login</a>
         </p>
       </form>
     </div>
     <div class="img"></div>
   </div>
-  <script src="registation.js"></script>
+  <script src="registration.js"></script>
 </body>
 </html>

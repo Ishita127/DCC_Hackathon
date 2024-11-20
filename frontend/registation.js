@@ -1,3 +1,7 @@
+function navigateToStudent() {
+  window.location.href = "student.html";
+}
+
 document.getElementById("loginForm").addEventListener("submit", function (e) {
     e.preventDefault();
   
@@ -16,8 +20,8 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
       errors.email = "Invalid email format";
     }
   
-    if (formData.password.length < 6) {
-      errors.password = "Password must be at least 6 characters";
+    if (formData.password.length < 8) {
+      errors.password = "Password must be at least 8 characters";
     }
   
     if (formData.confirmPassword !== formData.password) {
@@ -31,9 +35,10 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     // Display errors
     document.getElementById("error-email").textContent = errors.email || "";
     document.getElementById("error-password").textContent = errors.password || "";
-    document.getElementById("error-confirmPassword").textContent =
-      errors.confirmPassword || "";
+    document.getElementById("error-confirmPassword").textContent = errors.confirmPassword || "";
     document.getElementById("error-userRole").textContent = errors.userRole || "";
+
+  console.log("Errors object:", errors);
   
   });
   
